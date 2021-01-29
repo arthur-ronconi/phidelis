@@ -1,29 +1,19 @@
-# README #
+# 💻 Teste Frontend - Phidelis
 
-This README would normally document whatever steps are necessary to get your application up and running.
+[Layout](https://xd.adobe.com/view/c5eb029d-183f-43ff-a2ec-c10327529539-90b8/)
 
-### What is this repository for? ###
+### Descrição Geral
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+O teste consiste em avaliar as habilidades do candidato no desenvolvimento frontend, domínio, padrões de projetos, organização, performance, velocidade na entrega, qualidade do código, análise e compreensão do escopo.
 
-### How do I get set up? ###
+Será disponibilizado um layout em Adobe XD para orientação visual do que se espera no resultado final.  Entende-se que o candidato deve compreender todas as funcionalidades requisitadas a partir dele.
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+### Requisitos
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+- Respeitar a grid padrão do projeto
+- Pode utilizar o framework que julgar necessário
+- Utilizar metodologia [BEM CSS](http://getbem.com/introduction/)
+- Utilizar o gulp ou webpack
+- HTML5
+- CCS3
+- Trabalhar a responsividade dos elementos
