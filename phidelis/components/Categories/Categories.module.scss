@@ -1,0 +1,28 @@
+.categories {
+  white-space: nowrap;
+  overflow: auto;
+  /* width */
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #366aba;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #366aba;
+  }
+  .state-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
