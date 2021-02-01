@@ -4,6 +4,7 @@ import Jumbotron from "../components/Jumbotron";
 import styles from "../styles/Home.module.css";
 import Hero from "../sections/Hero";
 import Travel from "../sections/Travel";
+import Footer from "../sections/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Travel />
+      <Footer />
     </div>
   );
 }

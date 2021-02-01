@@ -12,7 +12,7 @@ const CategoryItem = ({ name }) => {
   }, [isSelected]);
   return (
     <div
-      className={`btn ${btnClass} rounded-pill m-2 ${styles.categoryItem}`}
+      className={`btn rounded-pill m-2 ${btnClass} ${styles.categoryItem}`}
       onClick={() => {
         setIsSelected(!isSelected);
       }}
