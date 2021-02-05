@@ -1,0 +1,98 @@
+// import fonts
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+// variables
+$font-family-heading: "Merriweather", serif;
+$font-family-text: "Roboto", sans-serif;
+
+$primary: #366aba;
+$black: #282828;
+$white: #fff;
+
+.App {
+  color: $black;
+  background-color: #f7faff;
+  font-family: $font-family-text;
+  transform: translateZ(0);
+  overflow-x: hidden;
+}
+.navbar {
+  height: 80px;
+}
+.home {
+  .jumbotron {
+    height: 770px;
+    font-family: $font-family-heading;
+    color: #282828;
+    background-image: url("./img/img-hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1 {
+      font-size: 52px;
+    }
+  }
+  .toggle-video {
+    padding: 0;
+    position: relative;
+    color: $primary;
+    background-color: $white;
+    border: none;
+    border-radius: 999px;
+    height: 76px;
+    width: 76px;
+    transition: all 0.1s ease-in-out;
+    z-index: 10;
+    box-shadow: 0 0 20px rgba(#394680, 0.2);
+    &:before {
+      position: absolute;
+      content: "";
+      height: 106px;
+      width: 106px;
+      top: -15px;
+      left: -15px;
+      border-radius: 999px;
+      background-color: rgba($white, 0.2);
+      transition: all 0.1s ease-in-out;
+      z-index: 1;
+      box-shadow: 0 0 20px rgba(#394680, 0.2);
+    }
+    &:hover {
+      color: $white;
+      background-color: $primary;
+      &:before {
+        background-color: rgba($white, 0.5);
+        height: 118px;
+        width: 118px;
+        top: -21px;
+        left: -21px;
+      }
+    }
+    i {
+      font-size: 2rem;
+      &:before {
+        margin-bottom: 0.2rem;
+        margin-left: 0.3rem;
+      }
+    }
+  }
+  .button-support {
+    font-family: $font-family-text;
+  }
+  .video {
+    position: absolute;
+    background-color: rgba(#000, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.card {
+  border: none !important;
+  border-radius: 10px !important;
+  box-shadow: 0 0 20px rgba(#a6aeba, 0.1);
+}
