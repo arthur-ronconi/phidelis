@@ -4,6 +4,7 @@ import { Home } from "./pages/Home";
 import { Login } from "./pages/Login";
 import { Navbar } from "./components/Navbar";
 import { Convento } from "./pages/Convento";
+import { Dashboard } from "./pages/Dashboard";
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route path="/convento">
             <Convento />
+          </Route>
+          <Route path="/dashboard">
+            <Dashboard />
           </Route>
         </Switch>
       </Router>

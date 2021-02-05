@@ -23,6 +23,23 @@ a {
   transform: translateZ(0);
   overflow-x: hidden;
 }
+.btn {
+  &-primary {
+    background-color: $primary !important;
+    border-color: $primary !important;
+  }
+  &-outline {
+    &-primary {
+      border-color: $primary !important;
+      color: $primary !important;
+    }
+  }
+}
+.bg {
+  &-primary {
+    background-color: $primary !important;
+  }
+}
 .navbar {
   height: 80px;
   background-color: $white !important;
@@ -168,5 +185,26 @@ a {
       width: 100%;
       margin: 2rem 0;
     }
+  }
+}
+
+.login {
+  height: 90vh;
+  .card {
+    .card-body {
+      padding: 2rem;
+      h4 {
+        font-size: 32px;
+      }
+    }
+  }
+  a {
+    color: $primary !important;
+    text-decoration: underline !important;
+  }
+  input,
+  button,
+  div.input-group-text {
+    border-radius: 10px;
   }
 }
