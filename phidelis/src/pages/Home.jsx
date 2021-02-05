@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Footer } from "../components/Footer";
+import { Trips } from "../components/Trips";
 
 export const Home = () => {
   const [videoIsVisible, setVideoIsVisible] = useState(false);
@@ -16,7 +18,7 @@ export const Home = () => {
                   className="toggle-video"
                   onClick={() => setVideoIsVisible(true)}
                 >
-                  <i class="bi bi-play-fill"></i>
+                  <i className="bi bi-play-fill"></i>
                 </button>
                 <p className="mb-0 ms-4 button-support">Assistir vídeo</p>
               </div>
@@ -41,16 +43,26 @@ export const Home = () => {
             <div className="card mb-5 p-4">
               <div className="card-body">
                 <div className="h2 search-title">Comece sua busca</div>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Pra onde você quer ir?"
-                />
+                <div className="input-group mb-3 mt-4">
+                  <input
+                    type="text"
+                    className="form-control border-end-0"
+                    placeholder="Pra onde você quer ir?"
+                  />
+                  <button
+                    className="input-group-text bg-white border-start-0"
+                    id="basic-addon1"
+                  >
+                    <i className="bi bi-search"></i>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <Trips />
       </div>
+      <Footer />
 
       {videoIsVisible && (
         <div className="video d-flex flex-column justify-content-center align-items-center">
