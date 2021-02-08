@@ -5,13 +5,17 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 export const Trips = () => {
   const [filterList, setFilterList] = useState("");
-  const handleClick = (item) => {
-    if (filterList.includes(item)) {
-      setFilterList(filterList.filter((item) => item !== item)); // ???
+  const handleClick = async (item) => {
+    let list = filterList;
+    let index = list.indexOf(item);
+    if (list.includes(item)) {
+      list.splice(index, 1);
+      setFilterList(list);
     } else {
       setFilterList([...filterList, item]);
     }
   };
+
   useEffect(() => {
     console.log(filterList);
   }, [filterList]);

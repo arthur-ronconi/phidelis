@@ -10,6 +10,12 @@ $font-family-text: "Roboto", sans-serif;
 $primary: #366aba;
 $black: #282828;
 $white: #fff;
+$success: #4caf50;
+
+body,
+html {
+  background-color: #f7faff;
+}
 
 a {
   text-decoration: none !important;
@@ -27,6 +33,10 @@ a {
   &-primary {
     background-color: $primary !important;
     border-color: $primary !important;
+  }
+  &-success {
+    background-color: $success;
+    color: $white !important;
   }
   &-outline {
     &-primary {
@@ -206,5 +216,53 @@ a {
   button,
   div.input-group-text {
     border-radius: 10px;
+  }
+}
+
+.dashboard {
+  h6 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+  }
+  .breadcrumb {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 10px;
+    &-item {
+      font-weight: bold;
+      color: $primary;
+      &.active {
+        font-weight: normal;
+        color: $black;
+      }
+    }
+  }
+  .table {
+    thead {
+      font-size: 18px;
+      tr {
+        th {
+          border: none;
+        }
+      }
+    }
+    tbody {
+      font-size: 14px;
+      tr {
+        td {
+          border: none;
+        }
+      }
+    }
+    td {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      color: $primary;
+    }
   }
 }

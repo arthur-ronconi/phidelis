@@ -1,6 +1,16 @@
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 export const Navbar = () => {
+  const [isLogged, setIsLogged] = useState(false);
+  const location = useLocation();
+  useEffect(() => {
+    if (location.pathname.includes("/dashboard")) {
+      setIsLogged(true);
+    } else {
+      setIsLogged(false);
+    }
+  });
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
@@ -30,7 +40,7 @@ export const Navbar = () => {
                 className="nav-link btn btn-primary rounded-pill px-3 text-white"
                 to="/login"
               >
-                Login
+                {isLogged ? "Sair" : "Login"}
               </Link>
             </li>
           </ul>
